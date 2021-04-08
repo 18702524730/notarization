@@ -1,0 +1,356 @@
+.checkplatform {
+  width: 100%
+  min-height 100vh
+  // 头部
+  &__header {
+    width: 1170px
+    height: 80px;
+    line-height: 80px
+    margin: 0px auto
+
+    &__rg {
+      float: right; 
+      position relative
+      a {
+        display inline-block
+        width 79px
+        height 24px
+        line-height 24px
+        text-align center
+        color:rgba(102,102,102,1);
+      }
+      a:last-child {
+        margin-left 14px
+      }
+      a.current-language {
+        background:rgba(61,177,250,1);
+        border-radius: 3px
+        color #ffffff
+      }
+      i {
+        position absolute
+        display inline-block
+        top 24px
+        left 88px
+        width 1px
+        height 32px
+        font-style normal
+        font-size 38px
+        background-color #EEEEEE
+      }
+    }
+  }
+  &__logo {
+    float: left
+    a {
+      display: inline-block
+      img {
+        display: inline-block
+        width:152px
+        height:25px
+        line-height 25px
+        vertical-align middle
+      }
+    }
+    p {
+      font-size 14px
+      display: inline-block
+      margin-left 20px
+      color rgba(102,102,102,1)
+    }
+  }
+  &__banner {
+    position relative
+    width 100%
+    height 340px 
+    line-height 340px
+    font-size 42px
+    background url('~assets/img/blockchnia/banner01.png') center
+    color #ffffff
+    letter-spacing: 2px;
+    span {
+      position absolute
+      width 700px
+      left 50%
+      margin-left -350px
+      text-align center
+    }
+  }
+  &__content {
+    background-color #f5f5f5
+    padding-top 30px
+    padding-bottom: 40px
+    ul.switch-tab {
+      display flex
+      width 1170px
+      height 50px
+      margin 0px auto
+      li {
+        width 585px
+        display inline-block
+        text-align center
+        line-height 50px
+        color rgba(51,51,51,1)
+        font-size 20px
+        letter-spacing: 1px
+        background:rgba(228,228,228,1);
+        cursor pointer
+      }
+      li.current-tag {
+        background:rgba(61,177,250,1)
+        color #ffffff
+      }
+    }
+    &__con {
+      width 1170px
+      min-height 300px
+      margin 0px auto
+      text-align center
+      background #ffffff
+      padding-top 40px
+      padding-bottom 42px
+      .checkplatform-con-form {
+        .input-wrap {
+          height:40px; 
+          left 50%
+          margin-left -300px
+          margin-top: 30px
+          margin-bottom 0px
+        }
+        .input-wrap-code {
+          position relative
+          width:600px;
+        }
+        span.placeholder {
+          position absolute
+          left 16px
+          top: 11px
+          color:rgba(187,187,187,1)
+        }
+        h2 {
+          letter-spacing: 1px
+          font-size:20px;
+          color:rgba(51,51,51,1);
+          font-weight: normal;
+        }
+        input.input-style {
+          width:600px;
+          height:40px; 
+          padding-left 16px
+          // margin 30px 0 38px 0
+          border 1px solid rgb(249, 249, 249)
+          background:rgba(244,244,244,1);
+          border-radius: 1px
+        }
+        input::placeholder {
+          color:rgba(187,187,187,1)
+        }
+        .error-tip {
+          width: 600px;
+          padding-left 36px
+          margin: 10px
+          display inline-block 
+          text-align left
+          color #F64744
+          background url('~assets/img/blockchnia/valid-error.png') no-repeat 14px
+          background-size 18px
+        }
+        p {
+          // margin-top 10px
+          color:rgba(221,221,221,1);
+        }
+        .validation {
+          position relative
+          width:600px;
+          height 40px
+          margin 0px auto
+          text-align left
+          #valid-code {
+            position absolute
+            top 0px
+            left 360px
+            width:103px;
+            height:40px;
+            img {
+              display inline-block
+              width 103px
+              height 40px
+            }
+          }
+          span {
+            position absolute
+            right 30px
+            top 10px
+            a {
+              text-decoration none
+              color rgba(61,177,250,1)
+              cursor pointer
+            }
+          }
+        }
+        input.valid-code {
+          position absolute
+          width 340px
+          left 0px
+          margin: 0
+        }
+        .btn {
+          width:220px;
+          height:40px; 
+          margin-top 30px
+          background:rgba(61,177,250,1);
+          border-radius: 3px
+          color #ffffff
+        }
+      }
+      .btn {
+        width:220px;
+        height:40px; 
+        margin-top 30px
+        background:rgba(61,177,250,1);
+        border-radius: 3px
+        color #ffffff
+      }
+      .checkplatform-con-search {
+        p {
+          font-size 18px
+          margin-top 22px
+        }
+      }
+      .checkplatform-con-success {
+        dl {
+          dt {
+            display inline-block
+          }
+          dd {
+            display inline-block
+            font-size:18px;
+            margin-left: 10px
+            line-height: 28px;
+            vertical-align: text-bottom;
+            text-align left
+            color:rgba(68,192,70,1);
+            span {
+              font-size 13px
+            }
+          }
+        }
+        ul {
+          width: 390px;
+          margin: 10px auto;
+          text-align: left;
+          li {
+            display inline-block;
+            width:100%;
+            color:rgba(51,51,51,1);
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+            span {
+              display: inline-block;
+              width: 120px;
+              text-align: right;
+              color #999999
+            }
+          }
+        }
+      }
+      .checkplatform-con-error {
+        dl {
+          dt {
+            display inline-block
+          }
+          dd {
+            display inline-block
+            line-height: 68px;
+            font-size:18px;
+            margin-left: 10px
+            vertical-align: text-bottom;
+          }
+        }
+        p {
+          font-size:14px;
+          margin-top 10px
+          color:rgba(51,51,51,1);
+        }
+      }
+    }
+    &__title {
+      position relative
+      width: 1170px
+      height 90px
+      margin: 0px auto
+      text-align center
+      line-height 90px
+      font-size:30px;
+      color:rgba(51,51,51,1)
+      letter-spacing: 1px
+      span {
+        min-width: 160px
+        position absolute
+        left 50%
+        transform: translateX(-50%)
+        background-color #f5f5f5
+      }
+      i {
+        position absolute
+        width: 300px
+        top: 45px
+        left 50%
+        margin-left -150px
+        height 1px
+        background-color #DDDDDD
+      }
+    }
+    // 支持机构
+    &__list {
+      width: 1170px
+      height 450px
+      margin: 0px auto
+      background-color #ffffff
+      padding: 50px 80px
+      ul {
+        li {
+          float left
+          display inline-block
+          width 280px
+          height:350px;
+          margin-right 85px
+          line-height 1.8
+          padding: 40px 20px
+          span {
+            display inline-block
+            width 100%
+            height 45px
+            margin-bottom 20px
+            text-align center
+          }
+          p {
+            font-size 13px
+            color #ffffff
+          }
+        }
+        li:nth-child(1) {
+          background url('~assets/img/blockchnia/platform_bg.png') center no-repeat
+        }
+        li:nth-child(2) {
+          background url('~assets/img/blockchnia/sebe_bg.png') center no-repeat
+        }
+        li:nth-child(3) {
+          padding-top: 33px
+          background url('~assets/img/blockchnia/noaggression_bg.png') center no-repeat
+          margin-right 0px
+        }
+      }
+    }
+  }
+  // 脚部
+  &__footer {
+    width 100%
+    height 60px
+    line-height 60px
+    text-align center
+    background-color #ffffff
+    color:rgba(51,51,51,1)
+  }
+}
